@@ -4,4 +4,15 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
   title: "Manboster",
   description: "Your Personal Manbo Lobster!",
+  locales: {
+    root: {
+      label: "English",
+      lang: "en",
+    },
+    "zh-cn": {
+      label: "简体中文",
+      lang: "zh-cn",
+    },
+  },
+  themeConfig: {},
 });

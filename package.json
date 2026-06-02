@@ -3,13 +3,12 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vitepress dev docs",
-    "build": "vitepress build docs",
-    "serve": "vitepress serve docs"
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "serve": "vitepress serve"
   },
   "devDependencies": {
-    "vue": "3.2.44",
-    "vitepress": "1.0.0-alpha.28"
+    "vitepress": "2.0.0-alpha.17"
   },
   "pnpm": {
     "peerDependencyRules": {
@@ -17,5 +16,8 @@
         "@algolia/client-search"
       ]
     }
+  },
+  "dependencies": {
+    "vue": "^3.5.35"
   }
 }

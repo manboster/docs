@@ -4,7 +4,7 @@ layout: home
 hero:
   name: Manboster
   text: Your Personal Manbo Lobster!
-  tagline: 
+  tagline: Manboster is a personal AI Agent like Hermes Agent, OpenClaw, PicoClaw, Memoh and IronClaw. Apart from claws, we forged it with a shell more secure. So it features pluggable tool call, built-in zero trust gatekeeper, Hachimi guard model and more than you think.
   actions:
     - theme: brand
       text: Get Started
@@ -17,7 +17,7 @@ hero:
       link: https://github.com/manboster/manboster
 features:
   - icon: ⚡️
-    title: Fast
+    title: Fast & Light
     details: Thanks to Golang, Manboster is born with genes that is fast and multithreaded. Also, it consumes only 40MB memory in your machine when idle. 
   - icon: 🔐
     title: Secure
