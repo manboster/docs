@@ -3,15 +3,15 @@ layout: home
 
 hero:
   name: Manboster
-  text: 你的虾头小助手！
+  text: 你的曼波虾头小助手！
   tagline:
   actions:
     - theme: brand
       text: 快速开始
-      link: /docs/quickstart.md
+      link: /zh-cn/docs/quickstart.md
     - theme: alt
       text: 文档
-      link: /docs/index.md
+      link: /zh-cn/docs/index.md
     - theme: alt
       text: GitHub
       link: https://github.com/manboster/manboster
