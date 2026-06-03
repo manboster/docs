@@ -11,13 +11,13 @@ If you downloaded [The Go Programming Language](https://go.dev/), you can simply
 go install github.com/manboster/manboster/cmd/manboster@latest
 ```
 
-If you are noob, go ahead.
+If you don't know what's this, go ahead.
 
 ## Mac Users?
 
-If you're Apple Silicon Mac users, this brew tap may help you install manboster:
+If you're Apple Silicon Mac users, thanks to [Lockinwize Lolite](https://github.com/mzwing), this brew tap may help you install manboster:
 
-Just execute brew to install:
+Just execute homebrew (Homebrew required) to install:
 
 ```shell
 brew tap MZWNET/tap
@@ -45,14 +45,26 @@ The assets' name is like `manboster-{Version}-{channel}-{commit}-{platform}-{arc
 > [!NOTE]
 > If you don't know anything and you're using Windows, download `win-amd64` type. It will help in most times. If it would't work, download another one.
 
-## Check sha256 sum of your downloaded items (optional)
+## Check SHA256 sum of your downloaded items (optional)
 
 > [!WARNING]
 > This is crucial before running any application downloaded from the Internet, we strongly recommend you to do this before execute any binary!
 
+If you are using windows, use `certutil -hashfile [Path To Manboster]`.
+
+If you are using macOS or linux, use `sha256` or `shasum -a 256`.
+
+Otherwise, you can also use GUI applications to calculate SHA256 sum and check them with assets specified on GitHub.
+
 ## Start the application
 
 If you want to try it out, just double-click it and start configuration wizard.
+
+You may parpare:
+
+1. Hand and brain
+2. An API Key, if you have none, learn how to get it in [this OpenRouter's Article](https://openrouter.ai/docs/cookbook/coding-agents/openclaw-integration#manual-configuration)
+3. If you want to use Telegram as your chat provider, you may need a Bot Token provided by @BotFather
 
 After the configuration wizard was done, you can open terminal and run `./manboster start` to start a daemon running in background. Or just double-click it to start.
 
@@ -68,6 +80,12 @@ Stop the daemon:
 
 ```shell
 ./manboster stop
+```
+
+Restart the daemon:
+
+```shell
+./manboster restart
 ```
 
 Checkout the daemon status
