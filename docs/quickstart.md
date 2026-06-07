@@ -32,7 +32,7 @@ The artifact contains different architecture and platform so you may carefully d
 
 The assets' name is like `manboster-{Version}-{channel}-{commit}-{platform}-{architecture}(.exe)`
 
-|  Artifact Name (Platform & Architecture) | Architecture & Platform   | Examples                            |
+|  Artifact Name (Platform & Architecture) | Platform & Architecture   | Examples                            |
 |------------------------------------------|---------------------------|-------------------------------------|
 | darwin-arm64                             | macOS with arm64 chip     | Apple Silicon Macs                  |
 | darwin-amd64                             | macOS with x86_64 chip    | Intel Macs                          |
