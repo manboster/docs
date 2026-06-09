@@ -2,7 +2,7 @@
 
 This is the documentation repository of Manboster.
 
-[Manboster Contributing Guideline] also applies to this repository.
+[Manboster Contributing Guideline](https://github.com/manboster/manboster/blob/master/CONTRIBUTING.md) also applies to this repository.
 
 If you want to get more information about Manboster, please go to [the main repository](https://github.com/manboster/manboster)
 
