@@ -12,5 +12,16 @@ export default defineAdditionalConfig({
         link: "https://github.com/manboster/manboster/releases",
       },
     ],
+    sidebar: [
+      {
+        text: "Documentation",
+        link: "/docs",
+        items: [
+          { text: "Quickstart", link: "/docs/quickstart" },
+          { text: "Introducing Hachimi", link: "/docs/hachimi" },
+          { text: "Introducing Gatekeeper", link: "/docs/gatekeeper" },
+        ],
+      },
+    ],
   },
 });

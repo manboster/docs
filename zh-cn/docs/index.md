@@ -11,5 +11,5 @@
 
 ## 还有更多？
 
-- [Hachimi 简介](/zh-cn/docs/hachimi.md)
+- [Hachimi(哈吉米)简介](/zh-cn/docs/hachimi.md)
 - [Gatekeeper 简介](/zh-cn/docs/gatekeeper.md)
