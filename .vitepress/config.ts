@@ -14,5 +14,15 @@ export default defineConfig({
       lang: "zh-cn",
     },
   },
-  themeConfig: {},
+  themeConfig: {
+    search: {
+      provider: "local",
+    },
+    footer: {
+      message:
+        'Manboster was released under <a href="https://github.com/manboster/manboster/blob/master/LICENSE" target="_blank">Apache 2.0</a> License',
+      copyright:
+        'Powered by <a href="https://github.com/manboster/manboster/contributors" target="_blank">Manboster Contributors</a> © 2026',
+    },
+  },
 });
