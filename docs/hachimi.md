@@ -25,7 +25,7 @@ And the context length occupations is on the table below:
 | High (4k tokens)      |  450MB on average  |
 | x-High (8k tokens)    |  850MB on average  |
 
-The context length is longer, the more things Hachimi can understand. If the evaluate message is too long, it will fallback to human.
+The context length is longer, the more things Hachimi can understand. If the evaluate message is too long (more than the limitation of the context length), it will fallback to human.
 
 For example, you are using `Qwen3 Guard Gen 0.6B`, which is `400MB` on size, and you selected `medium` context length.
 
@@ -37,7 +37,7 @@ The final memory occupation would be:
 
 
 > [!WARNING]
-> This is the mininium memory size required by Hachimi, we strongly recommend you to keep more spaces in order to avoid system's SIGKILL because it causes OOM(Out of Memory).
+> This is the minimum memory size required by Hachimi, we strongly recommend you to keep more spaces in order to avoid system's SIGKILL because it causes OOM(Out of Memory).
 
 ## Hachimi Roles
 
@@ -46,7 +46,9 @@ The final memory occupation would be:
 
 When it comes to tool selection, you can select `Handle by Hachimi` or `All handle by Hachimi for 1 hour` to activate Hachimi. You can also send `/reset` command to reset tool call handle status.
 
-Also, We use the lazy load technology to load Hachimi, if there is no requests available for a moment, we will unload it automatically.
+When Hachimi thinks it's suspicious or unsafe, the gatekeeper will hang up the request process, asking user to allow or reject request.
+
+Also, We use the lazy load technology to load Hachimi, if there is no requests available for a moment(now it is set 15 minutes), we will unload it automatically.
 
 ## Troubleshooting
 
