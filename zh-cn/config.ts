@@ -11,9 +11,10 @@ export default defineAdditionalConfig({
     ],
     sidebar: [
       {
-        text: "开发文档",
+        text: "Manboster 用户文档",
         link: "/zh-cn/docs",
         items: [
+          { text: "为什么选择Manboster?", link: "/zh-cn/docs/why" },
           { text: "快速开始", link: "/zh-cn/docs/quickstart" },
           { text: "Hachimi(哈吉米)简介", link: "/zh-cn/docs/hachimi" },
           { text: "Gatekeeper简介", link: "/zh-cn/docs/gatekeeper" },

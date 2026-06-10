@@ -6,6 +6,16 @@ Hachimi is a guard model mainly running on your device side (or you can change t
 
 Imagine that the Hachimi is the judge of the cloud LLM, it acts as a guard model in your local machine before executing. It effectively reduces the imagination caused by a single model but it could not tackle advanced and complex prompt engineering.
 
+## How can I see it work?
+
+This is an example of calling tool:
+
+```
+🐱➖ 🤖✅ 🌐 Manboster Request Tool: http://127.0.0.1:8080/api
+```
+
+`🐱` means Hachimi status, the emoji next to the cat indicates Hachimi activate status: `➖` means Hachimi is not activated in this tool call, `✅` means Hachimi thinks it's safe or you manually allowed Hachimi's suspcious or unsafe report, `❌` means you rejected Hachimi's suspcious or unsafe request.
+
 ## How can I open it?
 
 On setup wizard, the wizard will prompt that whether you want to enable it or not. If you don't enable it at that time, you can enable it later in `./manboster config` manager  `(Configuration > Hachimi)`.
