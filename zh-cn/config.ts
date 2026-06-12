@@ -7,6 +7,7 @@ export default defineAdditionalConfig({
     nav: [
       { text: "文档", link: "/zh-cn/docs" },
       { text: "配置", link: "/zh-cn/docs/configure" },
+      { text: "提交贡献", link: "/zh-cn/contribute" },
       { text: "下载", link: "https://github.com/manboster/manboster/releases" },
     ],
     sidebar: [

@@ -7,6 +7,7 @@ export default defineAdditionalConfig({
     nav: [
       { text: "Documentation", link: "/docs" },
       { text: "Configuration", link: "/docs/configure" },
+      { text: "Contribute", link: "/docs/contribute" },
       {
         text: "Releases",
         link: "https://github.com/manboster/manboster/releases",
