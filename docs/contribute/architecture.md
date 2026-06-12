@@ -2,6 +2,8 @@
 
 In this document, we will introduce Manboster's file structure and explain why it is that. It may help you add new features or fix new bugs in a proper way.
 
+This is a tree for Manboster application currently:
+
 ```
 > tree
 .
@@ -86,53 +88,14 @@ In this document, we will introduce Manboster's file structure and explain why i
 │   │   ├── ...
 │   │   └── vision
 │   ├── util -> utilities used in Manboster
-│   ├── vault
-│   └── wasm
-├── sdk
-└── spec
+│   ├── vault -> vault services used in Manboster (TODO)
+│   └── wasm -> wasm applications used in Manboster (TODO)
+├── sdk -> Manboster Software Development Kit for go wasm plugins (TODO)
+└── spec -> definitions of types
     ├── chat
-    │   ├── ability.go
-    │   ├── action.go
-    │   ├── chat.go
-    │   ├── clone.go
-    │   ├── command.go
-    │   ├── fork.go
-    │   ├── message.go
-    │   ├── payload.go
-    │   └── provider.go
     ├── cli
-    │   ├── build.go
-    │   ├── build_func.go
-    │   ├── build_type.go
-    │   └── provider.go
     ├── config
-    │   ├── args.go
-    │   ├── args_cli.go
-    │   ├── cli_form.go
-    │   └── provider.go
     ├── llm
-    │   ├── event.go
-    │   ├── message.go
-    │   ├── model.go
-    │   ├── model_func.go
-    │   ├── model_svc.go
-    │   ├── parts.go
-    │   ├── payloads.go
-    │   ├── provider.go
-    │   └── usage.go
     ├── plugin
-    │   ├── operation.go
-    │   ├── provider.go
-    │   └── response.go
     └── schema
-        ├── args.go
-        ├── args_schema.go
-        ├── args_struct.go
-        ├── args_validate.go
-        ├── args_validate_test.go
-        ├── meta.go
-        ├── require.go
-        └── user.go
-
-92 directories, 525 files
 ```
