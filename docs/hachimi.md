@@ -2,9 +2,9 @@
 
 ## What's a "Hachimi"?
 
-Hachimi is a guard model mainly running on your device side (or you can change the provider to another, if you select 'gguf', it will use `llama.cpp` and FFI technology to run Hachimi locally on your machine).
+Hachimi is a guard model mainly running on your device side (or you can change the provider to another, if you select 'gguf', it will use `llama.cpp` and FFI technology (yzma) to run Hachimi locally on your machine).
 
-Imagine that the Hachimi is the judge of the cloud LLM, it acts as a guard model in your local machine before executing. It effectively reduces the imagination caused by a single model but it could not tackle advanced and complex prompt engineering.
+Imagine that the Hachimi is the judge of the cloud LLM, it acts as a guard model in your local machine before executing. It effectively reduces the hallucination caused by a single model but it could not tackle advanced and complex prompt engineering.
 
 ## How can I see it work?
 

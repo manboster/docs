@@ -28,7 +28,7 @@ Manboster features Zero Trust design, we wouldn't let cloud LLMs destroy your co
 
 For this reference, just read introduction to [Hachimi](/docs/hachimi.md)(A small guard model running to judge cloud LLM's behaviours) and [Gatekeeper](/docs/gatekeeper.md)(The module controls the tool call request).
 
-Compared to competitor products, Hachimi is the most innovative point in all AI agents. But remind that Hachimi reduces the cost of decision and takes effect in reducing cloud LLM imagination, but it could not tackle advanced and complex prompt engineering so do not trust it absolutely.
+Compared to competitor products, Hachimi is the most innovative point in all AI agents. But remind that Hachimi reduces the cost of decision and takes effect in reducing cloud LLM hallucination, but it could not tackle advanced and complex prompt engineering so do not trust it absolutely.
 
 ## 3. Easy to use
 
@@ -48,7 +48,11 @@ Manboster built with a plenty of useful built-in tools. You can enable or disabl
 
 If you don't select any tool, you can regard it as your AI chatbot, as the tools adding on Manboster, it grows claws and is able to help you finish more tasks.
 
-## 5. Compatible with skills and MCP
+## 5. Written by hand
+
+In the era of the AI, vibe coding is used almost everywhere. However, Manboster's core security module was written by human. What did the AIs do? They filled the helper functions via the instruction, helped human review the safety architecture or enhanced the system prompt of Manboster. We ensure that the security is the top focus of Manboster, so we don't use AI to vibe coding due to the hallucination causes.
+
+## 6. Compatible with skills and MCP
 
 We are working on this so this is not the key feature of Manboster.
 
