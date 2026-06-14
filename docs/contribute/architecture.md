@@ -100,4 +100,31 @@ This is a tree for Manboster application currently, it provides a comprehensive 
     └── schema
 ```
 
-## How
+## How a Manboster Application starts
+
+Its execution flows like this:
+
+```
+`/cmd/manboster/main.go`(check i18n) -> `/internal/cli/manboster/app` -> `/internal/loader` -> `/internal/engine` 
+```
+
+1. Manboster's entrypoint file is `/cmd/manboster/main.go`. It will first activate i18n and then continue.
+2. Then it will activate cobra and handle you to different commands. (Next is the description of `main`.)
+3. `/internal/loader` loads Chat Providers(open new goroutines to poll, initialize and more), LLM Providers, Tool Providers and more.
+4. If loaded, loader will open engine and wait for the message feed.
+
+## How a message was handled in Manboster Engine
+
+Its execution flows like this:
+
+```
+Chat Provider -> PreProcessor -> distribute.go -> handler.go -> handler -> chatProvider.Send ...
+```
+
+1. Chat Provider triggers a message event
+2. Our PreProcessor checks out whether this message should be processed or not
+3. distribute.go distribute messages to handler or other places based on its type
+4. Handler will handle text, image and tool call and more.
+5. Once end, we will make responses via `chatProvider.Send` and send back messages
+
+We use Channels to help us manage incoming message from chat providers. It ensures the sequence of messages. And we defined session type in `/internal/session`, so you can get a preview in there.
