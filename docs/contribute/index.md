@@ -12,3 +12,4 @@ Before contributing this repository, we strongly recommend you to read it!
 
 - [Project Architecture](/docs/contribute/architecture.md)
 - [How to start](/docs/contribute/start.md)
+- [Versioning](/docs/contribute/versioning.md)

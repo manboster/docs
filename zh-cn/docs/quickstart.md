@@ -3,8 +3,8 @@
 > [!NOTE]
 > 此翻译部分内容由 Gemini 3.1 Pro 提供，如果有任何疏忽和遗漏，欢迎[向我们提交PR](https://github.com/manboster/docs/pull/new)进行修改！
 
-> [!NOTE]
-> 提示：Manboster 目前正处于内测开发阶段，我们会在 v0.2.0-rc 版本发布时将其开源公开。敬请期待！
+> [!WARNING]
+> 提示：Manboster 目前正处于不稳定阶段并且我们正在给它增加功能中，并不建议您生产使用，建议等待2026年9月的 `v1.0.0` 发布后再尝试生产端使用。
 
 ## 你是 Go 开发者吗？
 
@@ -28,6 +28,21 @@ brew tap MZWNET/tap
 brew install MZWNET/tap/manboster
 
 ```
+
+没问题，这是您指定段落的翻译：
+
+## 你是 AOSC OS 用户吗？
+
+如果您正在使用 [AOSC OS](https://aosc.io/)（有时也称为 Anthon OS），我们很高兴地告诉您，Manboster 将加入其软件仓库，并由仓库所有者维护。如果您使用的是 AOSC OS，只需使用包管理器 `oma` 安装即可。
+
+```shell
+oma install manboster
+
+```
+
+## 想用 Docker 或其他容器服务跑 Manboster？
+
+如果您想在 Docker 或其他容器服务中运行 Manboster，请阅读[此文档](/zh-cn/docs/container.md)。
 
 ## 查找并下载发行版 (Releases)
 
