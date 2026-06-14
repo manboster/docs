@@ -10,5 +10,5 @@ Before contributing this repository, we strongly recommend you to read it!
 
 ## Then Read
 
-- [Project Architecture](architecture.md)
-- [How to start](start.md)
+- [Project Architecture](/docs/contribute/architecture.md)
+- [How to start](/docs/contribute/start.md)

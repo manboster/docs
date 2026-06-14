@@ -34,7 +34,7 @@ oma install manboster
 
 ## Using Docker or other container services?
 
-If you want to run Manboster in docker or other container service, read [this document](/docs/docker).
+If you want to run Manboster in docker or other container service, read [this document](/docs/container.md).
 
 ## Find and Download Releases
 

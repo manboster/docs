@@ -13,4 +13,4 @@ Welcome to Manboster Documentation!
 
 ## Want to make a contribution?
 
-- Go to [Manboster Contribute Documentation](/docs/contribute)
+- Go to [Manboster Contribute Documentation](/docs/contribute/index.md)
