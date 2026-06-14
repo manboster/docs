@@ -20,6 +20,7 @@ export default defineAdditionalConfig({
         items: [
           { text: "Why Manboster?", link: "/docs/why" },
           { text: "Quickstart", link: "/docs/quickstart" },
+          { text: "Run in a container", link: "/docs/container" },
           { text: "Introducing Hachimi", link: "/docs/hachimi" },
           { text: "Introducing Gatekeeper", link: "/docs/gatekeeper" },
         ],

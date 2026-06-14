@@ -10,3 +10,7 @@ Welcome to Manboster Documentation!
 
 - [Introducing Hachimi](/docs/hachimi.md)
 - [Introducing Gatekeeper](/docs/gatekeeper.md)
+
+## Want to make a contribution?
+
+- Go to [Manboster Contribute Documentation](/docs/contribute)

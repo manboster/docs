@@ -2,11 +2,11 @@
 
 In this document, we will introduce Manboster's file structure and explain why it is that. It may help you add new features or fix new bugs in a proper way.
 
-This is a tree for Manboster application currently:
+## File Tree Overview
+
+This is a tree for Manboster application currently, it provides a comprehensive architecture preview of the Manboster:
 
 ```
-> tree
-.
 ├── build  -> This is the build repo
 │   └── manboster
 ├── build.sh  
@@ -99,3 +99,5 @@ This is a tree for Manboster application currently:
     ├── plugin
     └── schema
 ```
+
+## How

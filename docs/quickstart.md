@@ -24,6 +24,18 @@ brew tap MZWNET/tap
 brew install MZWNET/tap/manboster
 ```
 
+## AOSC OS Users?
+
+If you are using AOSC(or named Anthon OS sometimes), we are happy to say that Manboster is going to be its software repository and maintained by the repository owner. If you are using AOSC, just install it with the package manager `oma`.
+
+```shell
+oma install manboster
+```
+
+## Using Docker or other container services?
+
+If you want to run Manboster in docker or other container service, read [this document](/docs/docker).
+
 ## Find and Download Releases
 
 Go to [Releases](https://github.com/manboster/manboster/releases) and download binary file suitable for your machine.
