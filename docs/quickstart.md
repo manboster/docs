@@ -1,7 +1,7 @@
 # Quickstart
 
 > [!WARNING] 
-> Tips: Manboster is currently in developing and adding a plenty of features so it's not stable. It's not production-ready until `v1.0.0` releases in about September 2026.
+> Tips: Manboster is currently developing quickly with a plenty of new features so it's not stable. It's not production-ready until `v1.0.0` releases in about September 2026.
 
 ## Go Developers?
 
@@ -26,7 +26,7 @@ brew install MZWNET/tap/manboster
 
 ## AOSC OS Users?
 
-If you are using [AOSC OS](https://aosc.io/) (or named Anthon OS sometimes), we are happy to say that Manboster is going to be its software repository and maintained by the repository owner. If you are using AOSC, just install it with the package manager `oma`.
+If you are using [AOSC OS](https://aosc.io/) (or named Anthon OS sometimes), we are happy to say that Manboster is going to be into its software repository and maintained by the repository owner. If you are using AOSC, just install it with the package manager `oma`.
 
 ```shell
 oma install manboster

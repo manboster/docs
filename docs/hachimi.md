@@ -14,7 +14,7 @@ This is an example of calling tool:
 🐱➖ 🤖✅ 🌐 Manboster Request Tool: http://127.0.0.1:8080/api
 ```
 
-`🐱` means Hachimi status, the emoji next to the cat indicates Hachimi activate status: `➖` means Hachimi is not activated in this tool call, `✅` means Hachimi thinks it's safe or you manually allowed Hachimi's suspcious or unsafe report, `❌` means you rejected Hachimi's suspcious or unsafe request.
+`🐱` means Hachimi status, the emoji next to the cat indicates Hachimi activate status: `➖` means Hachimi is not activated in this tool call, `✅` means Hachimi thinks it's safe or you manually allowed Hachimi's suspcious or unsafe report,`❓` means Hachimi thinks this request is inspected, `❌` means you rejected Hachimi's suspcious or unsafe request.
 
 ## How can I open it?
 

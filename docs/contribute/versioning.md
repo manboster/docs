@@ -12,9 +12,11 @@ Manboster versioning is based on `SemVer`. And we use these git tags to release:
 
 `v1.0.0-alpha` means the Alpha version
 
-`v1.0.0-nightly-2026xxxx` means the Nightly version, `2026xxxx` means its release date
+`nightly-2026xxxx` means the Nightly version, `2026xxxx` means its release date
 
-`v1.0.0-canary` means the developing canary version
+`canary` means the developing canary version
+
+For more information, read [the guideline](https://github.com/manboster/manboster/blob/master/CONTRIBUTING.md).
 
 ## Branch Standard
 

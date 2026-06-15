@@ -4,9 +4,9 @@
 
 If you are seeking for an AI agent that is both light and safer than other agents, try Manboster.
 
-If you want more features (like skills, MCP or other features) or more compatible chat providers, I'm sorry that Manboster is currently meet your standard but we are working on improving it and sorry again for the inconvenience.
+If you want more features (like skills, MCP or other features) or more compatible chat providers, I'm sorry that Manboster is not currently meet your standard but we are working on improving it and sorry again for the inconvenience.
 
-If you are finding something for Business(ToB), I'm afraid that Manboster is designed for individual or small team use, not for big companies.
+If you are finding something for Business(ToB), I'm afraid that Manboster is designed for individual or small team use, not suitable for big companies.
 
 ## Reasons to choose manboster
 
