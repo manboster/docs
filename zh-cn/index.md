@@ -4,7 +4,7 @@ layout: home
 hero:
   name: Manboster
   text: 你的曼波虾头小助手！
-  tagline:
+  tagline: Manboster is a personal AI Agent like Hermes Agent, OpenClaw, PicoClaw, Memoh and IronClaw. Apart from claws, we forged it with a shell more secure. So it features pluggable tool call, built-in zero trust gatekeeper, Hachimi guard model and more than you think.
   actions:
     - theme: brand
       text: 快速开始
@@ -18,14 +18,14 @@ hero:
 features:
   - icon: ⚡️
     title: 快速又敏捷
-    details: 感谢 Golang 的语言特性，我们的 Manboster 生来就可以游刃有余的处理聊天信息，它在空载的时候只占 40MB 的内存！
+    details: Thanks to Golang, Manboster is born with genes that is fast and multithreaded. Also, it consumes only 40MB memory in your machine when idle.
   - icon: 🔐
     title: 安全
-    details: Manboster 内置零信任守门人系统，如果你不许模型做什么，守门人会死死守住让它动都动不了。
+    details: Manboster features built in Zero Trust design. If you disallow the LLM to do anything, it won't do anything due to the limitation of Gatekeeper.
   - icon: ⚖️
     title: 内置守卫
-    details: Manboster 内置 Hachimi（哈吉米），一个通常跑在本地的小模型。你可以让 Hachimi 帮你处理模型的工具调用请求。除非是可疑或危险情况，Hachimi 不会来打扰你。
+    details: Manboster 内置 Hachimi（哈吉米），一个通常跑在本地的小模型。你可以让 Hachimi 帮你处理模型的工具调用请求。除非是可疑或危险情况，Hachimi 不会来打扰你。  You can handle all requests to Hachimi, it will help you handle LLM's tool call requests properly unless it's unsure or unsafe.
   - icon: 🔧
-    title: 开箱即用
-    details: 只需要下载一个可执行文件，双击打开就能用了！当然，我们也在开发一个全新的基于 WebSocket 技术的管理面板，敬请期待～
+    title: Easy to use
+    details: Out of the box, only one executable file. Just download and click to start. Also, we are working on websocket-based web panel, stay tuned!
 ---
