@@ -2,12 +2,9 @@
 
 本文档旨在帮助您在容器中运行 Manboster，使其易于部署和获取。
 
-> [!NOTE]
-> 此翻译部分内容由 Gemini 3.1 Pro 提供，如果有任何疏忽和遗漏，欢迎[向我们提交PR](https://github.com/manboster/docs/pull/new)进行修改！
-
 ## 容器镜像在哪里？
 
-Manboster 的容器镜像是通过 GitHub Actions 自动生成的。它发布在 ghcr (GitHub Container Registry) 上。
+Manboster 的容器镜像是通过 GitHub Actions 自动生成的。它发布在 ghcr (GitHub Container Registry) 上。 It is published in ghcr.
 
 官方容器镜像地址为：
 
@@ -39,7 +36,7 @@ docker run -dit -v ./manboster-data:/app/manboster/ --restart=unless-stopped --n
 podman run -dit -v ./manboster-data:/app/manboster/ --restart=unless-stopped --name manboster-container ghcr.io/manboster/manboster
 ```
 
-如果您想启动配置 TUI（终端用户界面），请在 Manboster 停止后运行以下命令，否则会提示运行错误：
+如果您想启动配置 TUI，请在 Manboster 停止后运行以下命令，否则会提示运行错误：
 
 ```shell
 # 如果您使用的是 Docker：
@@ -51,7 +48,7 @@ podman stop manboster-container
 podman run --remove -it -v ./manboster-data:/app/manboster/ ghcr.io/manboster/manboster manboster config
 ```
 
-别忘了在配置完成后重新启动它们！
+Don't forget to get them up!
 
 如果您使用的是 Docker Compose 或 Podman Compose，您可以将以下内容添加到 `docker-compose.yml` 文件的 `services` 字段中：
 
@@ -87,7 +84,7 @@ docker compose up -d
 podman compose up -d
 ```
 
-如果您想启动配置 TUI，请在 Manboster 停止后运行以下命令，否则会提示运行错误：
+如果您想启动配置 TUI（终端用户界面），请在 Manboster 停止后运行以下命令，否则会提示运行错误：
 
 ```shell
 # Docker Compose
@@ -99,4 +96,4 @@ podman compose stop manboster
 podman compose run --rm manboster manboster config
 ```
 
-别忘了在配置完成后重新启动它们！
+Don't forget to get them up!
