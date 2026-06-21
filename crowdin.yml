@@ -1,3 +1,6 @@
+languages_mapping:
+  locale:
+    zh-CN: zh-cn
 files:
   - source: /*.md
     translation: /%locale%/%file_name%.md
@@ -5,7 +8,3 @@ files:
     translation: /README.%locale_with_underscore%.md
   - source: /docs/**/*.md
     translation: /%locale%/docs/**/%file_name%.md
-
-languages_mapping:
-  locale:
-    zh-CN: "zh-cn"
