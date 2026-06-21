@@ -1,17 +1,10 @@
 # Hachimi（哈吉米）简介
 
-> [!NOTE]
-> 此翻译部分内容由 Kimi K2.6 提供，如果有任何疏忽和遗漏，欢迎[向我们提交PR](https://github.com/manboster/docs/pull/new)进行修改！
-
 ## 什么是"Hachimi"？
 
 Hachimi（哈吉米）是一个主要运行在**设备端**的防护模型（你也可以更换提供商；如果选择 "gguf"，则会使用 `llama.cpp` 和 FFI 技术在本地运行 Hachimi）。
 
-你可以把 Hachimi 理解为云端大语言模型的"法官"——它在本地执行前先进行判断。它能有效降低单一模型产生的幻觉问题，但无法应对高级且复杂的提示词工程攻击。
-
-## 如何开启？
-
-在安装向导中，系统会询问你是否要启用 Hachimi。如果当时没有启用，你也可以稍后通过 `./manboster config` 管理器（`配置 > Hachimi`）来开启。
+Imagine that the Hachimi is the judge of the cloud LLM, it acts as a guard model in your local machine before executing. It effectively reduces the hallucination caused by a single model but it could not tackle advanced and complex prompt engineering.
 
 ## 如何查看它的工作状态？
 
@@ -23,22 +16,26 @@ Hachimi（哈吉米）是一个主要运行在**设备端**的防护模型（你
 
 `🐱` 代表 Hachimi 的状态，猫 emoji 旁边的表情符号表示 Hachimi 的激活状态：`➖` 表示 Hachimi 在此次工具调用中未激活，`✅` 表示 Hachimi 认为该请求安全，或你手动允许了 Hachimi 标记的可疑/不安全报告，`❓` 表示 Hachimi 认为该请求可疑但是你忽略了所有可疑内容，`❌` 表示你拒绝了 Hachimi 标记的可疑或不安全请求。
 
+## 如何开启？
+
+On setup wizard, the wizard will prompt that whether you want to enable it or not. 在安装向导中，系统会询问你是否要启用 Hachimi。如果当时没有启用，你也可以稍后通过 `./manboster config` 管理器（`配置 > Hachimi`）来开启。
+
 ## 系统要求
 
-如果运行默认模型 `Qwen3 Guard Gen 0.6B` 并选择 `medium`（中等）上下文，你的机器至少需要 **768MB** 可用内存。建议预留 **1GB** 以上可用内存。
+如果运行默认模型 `Qwen3 Guard Gen 0.6B` 并选择 `medium`（中等）上下文，你的机器至少需要 **768MB** 可用内存。建议预留 **1GB** 以上可用内存。 It's more better when it's more than 1GB memory available.
 
 Hachimi 模型的内存占用取决于运行模型的大小和上下文长度，你可以将模型本身的占用估算为 **文件大小的 1.2 倍**。
 
-不同上下文长度的内存占用如下表所示：
+And the context length occupations is on the table below:
 
-| 上下文长度 | 内存占用（平均） |
-|-----------|----------------|
-| Low（1k tokens） | 150MB |
-| Medium（2k tokens） | 250MB |
-| High（4k tokens） | 450MB |
-| x-High（8k tokens） | 850MB |
+| 上下文长度             | Memory Occupation |
+| ----------------- | ----------------- |
+| Low（1k tokens）    | 150MB             |
+| Medium（2k tokens） | 250MB             |
+| High（4k tokens）   | 450MB             |
+| x-High（8k tokens） | 850MB             |
 
-上下文长度越长，Hachimi 能够理解的内容就越多。如果评估消息过长（超过上下文长度限制），则会回退到人工处理。
+The context length is longer, the more things Hachimi can understand. If the evaluate message is too long (more than the limitation of the context length), it will fallback to human.
 
 例如，你正在使用 `Qwen3 Guard Gen 0.6B`，模型文件大小为 `400MB`，并选择了 `medium` 上下文长度。
 
@@ -54,9 +51,9 @@ Hachimi 模型的内存占用取决于运行模型的大小和上下文长度，
 ## Hachimi 的角色
 
 > [!WARNING]
-> Hachimi 帮助你判断云端大语言模型的工具调用请求是否安全。它确实有助于降低决策成本，让工作流更加顺畅。然而，受限于 Transformer 大语言模型的能力，你不能将所有事情都绝对地交给它处理。
+> Hachimi helps you decide cloud LLM's tool call requests safe or not. It truly helps reduce the cost of decision and make workflows more fluently. However, as the limitation of the transformer LLM, you couldn't absolutely handle anything to it.
 
-在工具选择时，你可以选择 `由 Hachimi 处理` 或 `全部交由 Hachimi 处理 1 小时` 来激活 Hachimi。你也可以发送 `/reset` 命令来重置工具调用处理状态。
+在工具选择时，你可以选择 `由 Hachimi 处理` 或 `全部交由 Hachimi 处理 1 小时` 来激活 Hachimi。你也可以发送 `/reset` 命令来重置工具调用处理状态。 You can also send `/reset` command to reset tool call handle status.
 
 当 Hachimi 认为某个请求可疑或不安全时，gatekeeper 将挂起该请求流程，请用户选择允许或拒绝。
 
