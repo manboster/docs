@@ -26,7 +26,7 @@ brew install MZWNET/tap/manboster
 
 ## AOSC OS Users?
 
-If you are using [AOSC OS](https://aosc.io/) (or named Anthon OS sometimes), we are happy to say that Manboster is going to be into its software repository and maintained by the repository owner. If you are using AOSC, just install it with the package manager `oma`.
+If you are using [AOSC OS](https://aosc.io/) (or named Anthon OS sometimes), we are happy to say that Manboster is now in its software repository and maintained by the repository owner. If you are using AOSC, just install it with the package manager `oma`.
 
 ```shell
 oma install manboster
