@@ -4,7 +4,5 @@ languages_mapping:
 files:
   - source: /*.md
     translation: /%locale%/%file_name%.md
-  - source: /README.md
-    translation: /README.%locale_with_underscore%.md
   - source: /docs/**/*.md
     translation: /%locale%/docs/**/%file_name%.md
