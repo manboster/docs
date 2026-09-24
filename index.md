@@ -5,6 +5,9 @@ hero:
   name: Manboster
   text: Your Personal Manbo Lobster!
   tagline: Manboster is a personal AI Agent like Hermes Agent, OpenClaw, PicoClaw, Memoh and IronClaw. Apart from claws, we forged it with a shell more secure. So it features pluggable tool call, built-in zero trust gatekeeper, Hachimi guard model and more than you think.
+  image:
+    src: /mbst.jpg
+    alt: Manboster Icon
   actions:
     - theme: brand
       text: Get Started
